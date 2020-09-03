@@ -1,0 +1,286 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+.version-1
+	a
+		color: #316995
+	.menu
+		ul
+			li
+				list-style: none
+				.icon
+					margin: auto 0
+					margin-right: 8px
+				a
+					margin: auto 0
+					font-size: 16px
+					color: $text
+					font-weight: 500
+					text-decoration: none
+					&:hover
+						color: $accent
+	.header
+		height: 135px
+		.container
+			position: relative
+		.logo
+			width: 247px
+			height: 57px
+			display: block
+			position: absolute
+			top: 39px
+			left: 15px
+			svg
+				width: 247px
+				height: 57px
+		&__menu
+			position: absolute
+			right: 15px
+			top: 72px
+			ul
+				width: 670px
+				justify-content: space-between
+				display: flex
+				li
+					display: flex
+				
+		&__link
+			font-size: 16px
+			color: $text
+			font-weight: 500
+			position: absolute
+			right: 15px
+			top: 72px
+			a
+				color: $text
+				text-decoration: none
+				&:hover
+					color: $accent
+	.section_capture
+		background-image: url(../img/bg-capture.jpg)
+		background-repeat: no-repeat
+		background-position: top center
+		.form
+			margin-top: 110px
+			width: 500px
+			background-color: #fff
+			margin-left: 15px
+			padding: 45px
+			box-shadow: -33px 24px 30px 0px rgba(0, 0, 0, 0.04)
+	.section_payment
+		img
+			position: relative
+			z-index: 3
+		.alert
+			margin-top: 110px
+
+	.section_pension
+		.row-btns
+			.btn
+				margin-left: 10px
+				margin-right: 10px
+
+
+.menu-wrapper
+	box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+	height: 100%
+	position: fixed
+	top: 65px
+	left: 0
+	width: 100%
+	z-index: 11
+	background-color: #fff
+	display: none
+	&__inner
+		width: 100%
+		display: flex
+		overflow-y: auto
+	.menu
+		margin: auto
+		width: 100%
+		text-align: center
+		li
+			padding-top: 5px
+			padding-bottom: 5px
+			a
+				width: 100%
+				color: $accent
+			
+
+.section_intro-payment
+	background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(245,247,250,1) 100%)
+	.container
+		position: relative
+		z-index: 2
+
+.menu-openned
+	overflow: hidden
+	.menu-wrapper
+		display: flex
+
+.footer
+	.soc
+		&__item
+			margin-right: 20px
+			a
+				svg
+					max-width: 20px
+					height: 20px	
+					fill: #d7d7d7
+				&:hover
+					svg
+						fill: $accent
+	&__heading
+		font-size: 18px
+		font-weight: 500
+		color: #000
+		a
+			font-size: 18px
+			font-weight: 500
+			color: #000
+			text-decoration: none
+			&:hover
+				color: $accent
+	&__link
+		font-size: 14px
+		color: #316995
+		a
+			color: #316995
+			text-decoration: none
+	&__logo
+		width: 123px
+		svg
+			width: 123px
+	&__menu
+		ul
+			li
+				list-style-type: none
+				margin: 0.25em 0
+				a
+					text-decoration: none
+					font-size: 16px
+					color: #000
+					transition: .3s ease
+					&:hover
+						color: $accent
+
+.version-2
+	.header
+		position: absolute
+		width: 100%
+		height: 115px
+		.logo
+			width: 317px
+			height: 74px
+			display: block
+			position: absolute
+			top: 32px
+			left: 15px
+			svg
+				width: 317px
+				height: 74px
+		.btn
+			position: absolute
+			right: 15px
+			top: 75px
+		&__phones
+			position: absolute
+			top: 30px
+			right: 399px
+			a
+				display: inline-block
+				margin-left: 5px
+				margin-right: 5px
+				font-size: 14px
+				color: #000
+				font-weight: 500
+
+		&__menu
+			display: inline-block
+			position: absolute
+			right: 218px
+			top: 82px
+			ul
+				li
+					list-style: none
+					display: inline-block
+					margin-left: 18px
+					margin-right: 18px
+					a
+						font-size: 16px
+						color: #727272
+						font-weight: 500
+						text-decoration: none
+						transition: .3s ease
+						&:hover
+							color: #000000
+		.call-me
+			position: absolute
+			display: flex
+			font-size: 16px
+			color: #000101
+			text-decoration: none
+			right: 15px
+			top: 29px
+			.icon
+				margin-right: 10px
+			span
+				margin-top: auto
+				margin-bottom: auto
+	.section_first
+		.bg
+			background-repeat: no-repeat
+			background-position: center
+			height: 817px
+			max-width: 1250px
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			flex-direction: column
+
+
+	.section_intro
+		background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(245,247,250,1) 100%)
+		.logo
+			width: 158px
+			height: 132px
+			svg
+				width: 158px
+				height: 132px
+
+		.row
+			min-height: 625px
+			position: relative
+		.col
+			flex-wrap: wrap
+
+		.more-link
+			position: absolute
+			bottom: 55px
+			left: 15px
+			font-family: $third-font
+		.container
+			position: relative
+
+		.tile-slider
+			position: absolute
+			left: 417px
+			top: 47px
+
+	.section_progs
+		.col-border
+			border-bottom: 1px solid #e3e3e3
+
+
+
+
+	.section_gal-tour
+		a
+			display: inline-block
+			margin-top: 1em
+			text-transform: uppercase
+			font-size: 14px
+			color: #000
+@import "media" // Always at the end
