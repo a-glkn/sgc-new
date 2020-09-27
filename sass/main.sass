@@ -82,7 +82,50 @@
 				margin-left: 10px
 				margin-right: 10px
 
+	.more-link
+		font-size: 14px
+		font-weight: 500
+		line-height: 1.5
+		color: #076698
+		display: inline-block
+		padding-right: 24px
+		position: relative
+		text-decoration: none
+		transition: .3s ease
+		.icon
+			width: 16.6px
+			height: 11px
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -5.5px
+			fill: #076698
 
+		&:hover
+			color: $accent
+			.icon
+				fill: $accent
+
+	.section_feedback
+		.col-btn-more
+			text-align: right
+
+	.section_features
+		.features-wrapper
+			position: relative
+			margin-top: 50px
+			.features
+				position: relative
+				z-index: 10
+			.features-bg
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				svg
+					width: 100%
+					height: 326px
+					fill: #f2f7fa
 .menu-wrapper
 	box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
 	height: 100%
@@ -108,7 +151,6 @@
 				width: 100%
 				color: $accent
 			
-
 .section_intro-payment
 	background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(245,247,250,1) 100%)
 	.container

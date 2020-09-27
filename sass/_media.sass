@@ -118,7 +118,7 @@
             top: 0
             left: 0
             background-color: #fff
-            z-index: 10
+            z-index: 1000
             box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
             .logo
                 width: 148.2px
@@ -252,6 +252,18 @@
                 display: none
             .btn
                 display: none
+
+
+    .feedback
+        &__item
+            width: calc(50% - 4.5px)
+
+    .quote
+        padding-left: 0
+        .col-text
+            padding-top: 0
+        &:after
+    
 // ≥768px
 +media-breakpoint-down(sm)
     .py-5_mob
@@ -364,6 +376,27 @@
         .section
             &_figure-2
                 margin-bottom: 0
+
+    .feedback
+        &__item
+            width: 100%
+
+
+    .features
+        &__item
+            width: 100%
+            margin-top: 10px
+            margin-bottom: 10px
+
+    .section_features
+        .features-wrapper
+            .features-bg
+                display: none
+    .news-list
+        flex-wrap: wrap
+        &__item
+            width: 100%
+            margin-bottom: 30px
 // ≥576px
 +media-breakpoint-down(xs)
     .btn_w-260
@@ -410,6 +443,10 @@
 
     .card
         width: 100%
+
+    .features-group
+        .list-checked
+            margin-left: 0
 @media only screen and (max-width : 420px)
     .payment-block
         .form
