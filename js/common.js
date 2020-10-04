@@ -1,11 +1,19 @@
 var markerItems = [{"center":["59.868817","30.454011"]}]
 $(function() {
 
+	$('.header .search-zoom').on('click', function(e) {
+		
+		$('.header-2').fadeToggle()
+	});
+
 	jQuery('.datetimepicker').datetimepicker({
 		format:'d.m.Y H:i',
 		inline:true,
 		lang:'ru'
 	});
+
+
+	$('select').selectize();
 
 	jQuery.datetimepicker.setLocale('ru');
 

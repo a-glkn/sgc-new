@@ -22,29 +22,166 @@
 					&:hover
 						color: $accent
 	.header
-		height: 135px
+		height: 174px
+		position: relative
+		z-index: 10
+		.search-zoom
+			cursor: pointer
+			width: 16px
+			height: 16px
+			display: none
+			position: absolute
+			svg
+				width: 16px
+				height: 16px
+		.phone
+			font-size: 16px
+			font-weight: 500
+			left: 420px
+			top: 51px
+			position: absolute
+			a
+				text-decoration: none
+				color: #000
+				&:hover
+					color: $accent
+		.location
+			font-size: 16px
+			display: flex
+			line-height: 17px
+			position: absolute
+			left: 290px
+			top: 54px
+			cursor: pointer
+			&__icon
+				width: 11px
+				height: 17px
+				margin-right: 12px
+				svg
+					width: 11px
+					height: 17px
+			&__city
+				color: #296193
+				font-weight: 500
+				text-decoration: underline
+		.header-1
+			height: 112px
+			box-shadow: 0px 22px 30px 0px rgba(0, 0, 0, 0.03)
+		.header-2
+			height: 62px
+			.form-search
+				right: 15px
+				top: 11px
+				position: absolute
 		.container
 			position: relative
+		.payments
+			display: flex
+			line-height: 31px
+			right: 15px
+			top: 47px
+			position: absolute
+			img
+				display: inline-block
+				margin-right: 20px
+			a
+				font-size: 16px
+				color: #000000
+				text-decoration: underline
+		.call-back
+			display: flex
+			font-size: 16px
+			color: #000101
+			font-weight: 500
+			line-height: 16px
+			position: absolute
+			top: 55px
+			left: 570px
+			transition: .3s ease
+			text-decoration: none
+			.icon
+				margin-right: 12px
+			div
+
+			&:hover
+				color: $accent
 		.logo
 			width: 247px
 			height: 57px
 			display: block
 			position: absolute
-			top: 39px
+			top: 23px
 			left: 15px
 			svg
 				width: 247px
 				height: 57px
 		&__menu
-			position: absolute
-			right: 15px
-			top: 72px
-			ul
-				width: 670px
-				justify-content: space-between
+			padding-right: 300px
+			a
+				transition: .3s ease
+				text-decoration: none
+				&:hover
+					color: $accent
+			>ul
 				display: flex
-				li
-					display: flex
+				margin-bottom: 0
+				>li
+					margin-right: 25px
+					list-style: none 
+					padding-top: 19px
+					padding-bottom: 19px
+					position: relative
+					&.has-sub
+						padding-right: 20px
+						position: relative
+						&:after
+							position: absolute
+							right: 0
+							top: 50%
+							margin-top: -4.5px
+							content: ''
+							display: block
+							width: 16px
+							height: 7px
+							background-position: 0 0
+							background-repeat: no-repeat
+							background-image: url(../img/arr.png)
+					>a
+						font-size: 16px
+						text-transform: uppercase
+						font-weight: 500
+						color: #000000
+						text-decoration: none
+					
+					ul
+						display: none
+						position: absolute
+						top: 62px
+						left: 0
+						background: #fff
+						padding-left: 28px
+						padding-right: 28px
+						padding-top: 20px
+						padding-bottom: 20px
+						box-shadow: 0px 5px 54px 0px rgba(0, 0, 0, 0.05)
+						li
+							list-style: none 
+							margin: 0.5em 0
+							a
+								font-size: 18px
+								color: #000000
+								font-weight: 500
+								white-space: nowrap
+
+					&:hover
+						&.has-sub
+							&:after
+								transform: rotate(180deg)
+						ul
+							display: block
+								
+
+
 				
 		&__link
 			font-size: 16px
@@ -109,6 +246,7 @@
 	.section_feedback
 		.col-btn-more
 			text-align: right
+	
 
 	.section_features
 		.features-wrapper
